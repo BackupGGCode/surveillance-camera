@@ -42,7 +42,7 @@ Once parts have arrived I laid everything out on a breadboard. Proto-prototype h
 It took me about two months to fully code and debug camera's firmware. Following resources were very helpful when developing micro controller program:
   1. [AVR Eclipse Plugin](http://avr-eclipse.sourceforge.net/) made it very easy to set up AVR project and flush it to the chip (I used [AVRISP mkII](http://www.atmel.com/dyn/products/tools_card.asp?tool_id=3808), which worked great with my OS X).
   1. [This implementation](http://code.google.com/p/arms22/source/browse/trunk/JPEGCamera/?r=88) of LinkSpite Camera provided easy way of capturing an image.
-  1. [SdFat Library](https://github.com/greiman/SdFat)built by William Greiman was small and efficient (although I had to remove some un-used methods to make it even smaller).
+  1. [SdFat Library](https://github.com/greiman/SdFat) built by William Greiman was small and efficient (although I had to remove some un-used methods to make it even smaller).
   1. Martin Nawrath's [Nightingale example](http://interface.khm.de/index.php/lab/experiments/sleep_watchdog_battery/) gave a good idea about how sleep mode works on ATmegas.
 
 I had to write a wrapper serial communication with MultiTech GSM modem (it certainly works with MTSMC-G2-IP and it should also work with an Universal Socket device). Check out [SocketModem.cpp](https://github.com/BackupGGCode/surveillance-camera/tree/master/src/modem).
